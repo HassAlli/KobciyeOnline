@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.banner{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(100, 0, 100, 1), rgba(100, 0, 100, 0.25)), url(BACKGROUND5.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 5s;
+}
+
+nav{
+    margin: auto;
+    width: 85%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 3s;
+}
+
+nav img {
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: #00aeff;
+    transition: 0.5s;
+}
+
+nav ul .current a{
+    color: #00aeff;
+}
+
+nav ul .current a:hover{
+    color: #35bfff;
+}
+
+nav ul .signUp a{
+    padding: 10px 14px;
+    background: #009688;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+}
+
+nav ul .signUp a:hover{
+    background: #00aeff;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/*SECOND SECTION*/
+
+.main-title h2{
+    margin-top: 30px;
+    font-family: Tw Cen MT;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #320d3e;
+}
+.main-title .under{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.main-title .under .line{
+    width: 103px;
+    height: 4px;
+    margin: 5px 45px;
+    background-color: #ff8800;
+}
+
+
+.main-content{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 3s;
+}
+
+.box{
+    width: 200px;
+    height: 250px;
+    background-color: #ffd89e;
+    margin: 10px;
+    border: none;
+    border-radius: 2%;
+    margin-bottom: 25px;
+}
+
+.box:hover{
+    border-bottom: 60px hsla(36, 100%, 81%, 0.5) solid;
+    transition: 0.5s;
+}
+
+.box .title{
+    width: 100%;
+    height: 40%;
+    background-color: #320d3e;
+}
+
+.box h1{
+    padding: 20px 10px;
+    font-size: medium;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffd79d;
+}
+
+.info{
+    padding: 15px;
+}
+
+.info p{
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0.9px;
+    margin-top: 5px;
+    color: #320d3e;
+}
+
+.info a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 12px;
+    font-family: Tw Cen MT;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 10px 30px;
+    text-align: center;
+    color: #320d3e;
+    border: 1px #320d3e solid;
+    border-radius: 25px;
+}
+
+.info a:hover{
+    background-color: #320d3e;
+    color: #ffd79d;
+    transition: 0.5s;
+}
+
+
+/*FOOTER SECTION*/
+
+
+footer{
+    width: 100%;
+    background-color: rgb(100, 0, 100);
+}
+
+.footer-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    padding: 8px 6%;
+}
+
+.tabs p, .courses-catog p, .address p, .contact p{
+    font-family: Tw Cen MT;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(230, 230, 230);
+}
+
+.footer-content ul li{
+    color: rgb(230, 230, 230);
+    list-style-type: none;
+    padding: 8px;
+    font-family: Tw Cen MT;
+    text-transform: uppercase;
+}
+
+.footer-content ul li a{
+    text-decoration: none;
+    font-family: Tw Cen MT;
+    font-size: 16px;
+    color: rgb(175, 175, 175);
+    text-transform: uppercase;
+}
+
+.contact ul li a{
+    text-transform: lowercase;
+}
+
+.footer-content ul li a:hover{
+    color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+
+.fa-greater-than{
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.copyright{
+    width: 100%;
+    margin: 0;
+}
+
+.copyright hr{
+    width: 85%;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid hsla(0, 0%, 100%, 0.149);
+}
+
+.copy-content{
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px;
+    color: rgb(230, 230, 230);
+}

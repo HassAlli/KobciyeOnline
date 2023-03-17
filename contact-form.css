@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.banner{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(100, 0, 100, 1), rgba(100, 0, 100, 0.25)), url(BACKGROUND5.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 5s;
+}
+
+nav{
+    margin: auto;
+    width: 85%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 3s;
+}
+
+nav img {
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: #00aeff;
+    transition: 0.5s;
+}
+
+nav ul .current a{
+    color: #00aeff;
+}
+
+nav ul .current a:hover{
+    color: #35bfff;
+}
+
+nav ul .signUp a{
+    padding: 10px 14px;
+    background: #009688;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+}
+
+nav ul .signUp a:hover{
+    background: #00aeff;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/*SECTION TWO*/
+
+.main{
+    width: 100%;
+}
+
+.main .contant{
+    width: 85%;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.main .contant h2{
+    margin-top: 25px;
+    font-family: Tw Cen MT;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #320d3e;
+}
+
+.main .contant .under{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.main .contant .under .line{
+    width: 87px;
+    height: 4px;
+    margin: 5px 35px;
+    margin-bottom: 0;
+    background-color: #ff8800;
+}
+
+.main .contant .titles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contant .titles .title{
+    padding: 25px;
+    width: 30%;
+}
+
+.titles .title h3{
+    font-family: Tw Cen MT;
+    color: #640064;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    padding-top: 5px;
+}
+
+.titles hr{
+    margin: auto 0;
+    height: 80px;
+    border: 1px solid #ffb158;
+}
+
+.titles .title p{
+    font-family: Tw Cen MT;
+    color: rgb(100, 0, 100);
+    font-size: 17px;
+    letter-spacing: .9;
+    padding-left: 15%;
+}
+
+
+
+/*THE CONTACT PART*/
+
+
+.contact-banner{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #320d3e;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.contact-banner .info{
+    float: left;
+    width: 35%;
+}
+
+.contact-banner .info h3{
+    font-family: Tw Cen MT;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffd79d;
+    letter-spacing: 1px;
+    padding: 10px 10%;
+    margin-top: 7%;
+}
+
+.contact-banner .info p{
+    font-family: Tw Cen MT;
+    font-size: 20px;
+    color: #ffd79d;
+    letter-spacing: 0.8px;
+    padding: 0 10%;
+}
+
+.contact-banner .info ul{
+    margin-top: 15px;
+}
+
+.contact-banner .info ul li{
+    padding: 10px 65px;
+    list-style-type: none;
+    font-family: Tw Cen MT;
+    color: #ffd79d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-banner .info ul li a{
+    text-decoration: none;
+    font-family: Tw Cen MT;
+    color: #afa595;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    cursor: default;
+}
+
+.contact-banner .info ul li a:hover{
+    color: #ffd79d;
+    transition: 0.5s;
+}
+
+.contact-banner main{
+    margin-left: 400px;
+    padding: 20px;
+    background-color: #ffd79d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact-banner main h2{
+    font-family: Tw Cen MT;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #320d3e;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.contact-banner main input[type="email"], input[type="text"], 
+.contact-banner main textarea{
+    width: 90%;
+    margin: 20px;
+    background: none;
+    color: #320d3e;
+    font-family: Tw Cen MT;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    outline: none;
+    border: none;
+    border-bottom: 1px #320d3e solid;
+    padding: 15px 0;
+}
+
+.contact-banner main input[type="email"]:hover, input[type="text"]:hover, 
+.contact-banner main textarea:hover{
+    border-bottom: 1px #d902ee solid;
+    transition: 0.25s;
+}
+
+.contact-banner main textarea{
+    height: 125px;
+    resize: none;
+}
+
+.contact-banner main input[type="submit"]{
+    width: 100px;
+    color: #ffd79d;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #320d3e;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contact-banner main input[type="submit"]:hover{
+    background-color: #d902ee;
+    transition: 0.5s;
+}
+
+
+/*FOOTER SECTION*/
+
+
+footer{
+    width: 100%;
+    background-color: rgb(100, 0, 100);
+}
+
+.footer-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    padding: 8px 6%;
+}
+
+.tabs p, .courses-catog p, .address p, .contact p{
+    font-family: Tw Cen MT;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(230, 230, 230);
+}
+
+.footer-content ul li{
+    color: rgb(230, 230, 230);
+    list-style-type: none;
+    padding: 8px;
+    font-family: Tw Cen MT;
+    text-transform: uppercase;
+}
+
+.footer-content ul li a{
+    text-decoration: none;
+    font-family: Tw Cen MT;
+    font-size: 16px;
+    color: rgb(175, 175, 175);
+    text-transform: uppercase;
+}
+
+.fa-greater-than{
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.contact ul li a{
+    text-transform: lowercase;
+}
+
+.footer-content ul li a:hover{
+    color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+
+.copyright{
+    width: 100%;
+    margin: 0;
+}
+
+.copyright hr{
+    width: 85%;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid hsla(0, 0%, 100%, 0.149);
+}
+
+.copy-content{
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px;
+    color: rgb(230, 230, 230);
+}

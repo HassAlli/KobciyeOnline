@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.banner{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(100, 0, 100, 1), rgba(100, 0, 100, 0.25)), url(BACKGROUND5.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 5s;
+}
+
+nav{
+    margin: auto;
+    width: 85%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 3s;
+}
+
+nav img {
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: #00aeff;
+    transition: 0.5s;
+}
+
+nav ul .current a{
+    color: #00aeff;
+}
+
+nav ul .current a:hover{
+    color: #35bfff;
+}
+
+nav ul .signUp a{
+    padding: 10px 14px;
+    background: #009688;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+}
+
+nav ul .signUp a:hover{
+    background: #00aeff;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/*ABOUT SECTION*/
+
+.about-sec{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.about-sec .container{
+    width: 85%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.about-sec .container .content{
+    width: 60%;
+}
+
+.about-sec .container .image-sec{
+    width: 40%;
+}
+
+.about-sec .container img{
+    width: 100%;
+}
+
+.about-sec .container h1{
+    font-family: Tw Cen MT;
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #320d3e;
+}
+
+.about-sec .container h3{
+    font-family: Tw Cen MT;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #63466d;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.about-sec .container p{
+    font-family: Tw Cen MT;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: .5px;
+    text-align: justify;
+    padding-right: 25px;
+    color: #320d3e;
+}
+
+.about-sec .container .buttton{
+    margin-top: 30px;
+}
+
+.about-sec .container .buttton a{
+    font-family: Tw Cen MT;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #320d3e;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px #320d3e solid;
+    border-radius: 24px;
+}
+
+.about-sec .container .buttton a:hover{
+    background-color: #320d3e;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.mission-title h2{
+    font-family: Tw Cen MT;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0f002b;
+}
+.mission-title .under{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.mission-title .under .line{
+    width: 60px;
+    height: 4px;
+    margin: 5px 25px;
+    background-color: #ff8800;
+}
+
+.mission-content{
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mission p{
+    width: 255px;
+    height: 125px;
+    text-align: left;
+    padding: 12px;
+    font-family: Tw Cen MT;
+    font-size: 18px;
+    background-color: #4f1463;
+    margin: 10px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    box-shadow: 5px 5px 20px #4f1463;
+    cursor: pointer;
+}
+
+.mission p:hover{
+    background-color: #320d3e;
+    transition: 0.8s;
+}
+
+
+.achive-title h2{
+    font-family: Tw Cen MT;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0f002b;
+    margin-top: 35px;
+}
+.achive-title .under{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.achive-title .under .line{
+    width: 85px;
+    height: 4px;
+    margin: 5px 25px;
+    background-color: #ff8800;
+}
+
+
+.numbers{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.numbers .number{
+    margin: 10px 40px;
+    margin-bottom: 15px;
+    color: #320d3e;
+}
+
+.numbers h2{
+    font-family: Tw Cen MT;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.numbers p{
+    font-family: Tw Cen MT;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px;
+}
+
+
+
+
+/*FOOTER SECTION*/
+
+footer{
+    width: 100%;
+    background-color: rgb(100, 0, 100);
+}
+
+.footer-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    padding: 8px 6%;
+}
+
+.tabs p, .courses-catog p, .address p, .contact p{
+    font-family: Tw Cen MT;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(230, 230, 230);
+}
+
+.footer-content ul li{
+    color: rgb(230, 230, 230);
+    list-style-type: none;
+    padding: 8px;
+    font-family: Tw Cen MT;
+    text-transform: uppercase;
+}
+
+.footer-content ul li a{
+    text-decoration: none;
+    font-family: Tw Cen MT;
+    font-size: 16px;
+    color: rgb(175, 175, 175);
+    text-transform: uppercase;
+}
+
+.contact ul li a{
+    text-transform: lowercase;
+}
+
+.footer-content ul li a:hover{
+    color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+
+.fa-greater-than{
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.copyright{
+    width: 100%;
+    margin: 0;
+}
+
+.copyright hr{
+    width: 85%;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid hsla(0, 0%, 100%, 0.149);
+}
+
+.copy-content{
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px;
+    color: rgb(230, 230, 230);
+}
